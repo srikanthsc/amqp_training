@@ -34,6 +34,12 @@
             <version>${assertj.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 <dependencyManagement>
@@ -45,17 +51,17 @@
             <scope>import</scope>
             <type>pom</type>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+            <version>2.6.3</version>
+        </dependency>
     </dependencies>
 </dependencyManagement>
 
 
-<dependencies>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-amqp</artifactId>
-        <!-- <version>???</version> --> <!--(1)-->
-    </dependency>
-</dependencies>
+
+
     <build>
         <pluginManagement>
             <plugins>
