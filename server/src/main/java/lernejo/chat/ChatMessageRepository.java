@@ -1,20 +1,19 @@
-package fr.lernejo.chat;
+package lernejo.chat;
 
 import java.util.LinkedList;
-
-
-
 import java.util.List;
 
 public class ChatMessageRepository {
     List<String> mymessage_list = new LinkedList<>();
 
     public void addChatMessage(String message) {
+
         mymessage_list.add(message);
     }
 
     public List<String> getLastTenMessages() {
         List<String> mylist =
+
             new LinkedList<>();
 
         if (mymessage_list.size() > 10 -1) {
