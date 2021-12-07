@@ -7,11 +7,8 @@ import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-
-
 @Configuration
 public class AmqpConfiguration {
-
     private static final String queueName = "chat_messages";
 
     @Bean
