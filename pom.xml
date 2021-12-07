@@ -36,6 +36,26 @@
         </dependency>
     </dependencies>
 
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>2.6.1</version>
+            <scope>import</scope>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
+
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-amqp</artifactId>
+        <!-- <version>???</version> --> <!--(1)-->
+    </dependency>
+</dependencies>
     <build>
         <pluginManagement>
             <plugins>
